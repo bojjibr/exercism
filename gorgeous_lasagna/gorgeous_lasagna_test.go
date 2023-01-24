@@ -2,6 +2,16 @@ package gorgeouslasagna
 
 import "testing"
 
+func TestOvenTime(t *testing.T) {
+	got := OvenTime
+	expected := 40
+
+	if got != expected {
+		t.Errorf("expected '%d', but got '%d'", expected, got)
+	}
+
+}
+
 func TestRemainingOvenTime(t *testing.T) {
 	got := RemainingOvenTime(30)
 	expected := 10
