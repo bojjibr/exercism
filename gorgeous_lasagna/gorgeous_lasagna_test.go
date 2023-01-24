@@ -21,3 +21,12 @@ func TestPreparationTime(t *testing.T) {
 	}
 
 }
+
+func TestElapsedTime(t *testing.T) {
+	got := ElapsedTime(3, 20)
+	expected := 26
+
+	if got != expected {
+		t.Errorf("expected '%d' but got '%d'", expected, got)
+	}
+}
